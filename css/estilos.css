@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ /* body */
+
+ .layout{
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "body body body body body"
+    "body body body body body"
+    "body body body body body"
+    "body body body body body"
+    "body body body body body"
+    "body body body body body"
+    "footer footer footer footer footer"
+    ;
+ }
+ 
+/* header */
+header{
+    background-image: url(../imagenes/menu.jpg) ;
+    background-size: cover;
+  height: 350px;
+  grid-area: header;
+}
+
+
+header .headerFlex{
+display: flex;
+justify-content: end;
+flex-flow: wrap;
+}
+
+.logo{
+    width: 150px;
+    padding: 10px 0 10px 10px;
+   margin-left: 50px;
+}
+
+header nav ul{
+    margin-right: 50px;
+   margin-top: 25px;
+}
+header ul li {
+    border-right: solid rgb(255, 255, 255);
+    list-style: none;
+display:inline-block;
+font-size: 2em;
+padding-right: 20px;
+}
+a{
+    text-decoration: none;
+color: rgb(255, 255, 255);
+}
+header h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 90px;
+}
+header p{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+  
+/* principal*/
+
+main{
+    grid-area: body;
+}
+main .contenedorGrid{
+    display: grid;
+grid-template-areas:
+ ". tarjeta1 tarjeta2 tarjeta3 ."
+ "separador separador separador separador separador"
+ ". tarjeta4 texto2 . ."
+ ". . texto1 tarjeta5 ."
+;
+row-gap: 20px;
+column-gap: 20px;
+padding: 20px 0;
+margin: 100px 100px;
+}
+
+.separador{
+    height:200px
+}
+
+
+.separador{
+    grid-area: separador;
+}
+.tarjetasa{
+    grid-area: tarjeta1;
+    justify-self: right;
+}
+
+.tarjetasb{
+    grid-area: tarjeta2;
+    justify-self: center;
+}
+.tarjetasc{
+    grid-area: tarjeta3;
+    justify-self: left;
+}
+
+.tarjetas2d{
+    background-image: url(../imagenes/pareja\ cafe.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border: solid black;
+    border-radius: 50%;
+    grid-area: tarjeta4;
+    justify-self: left;
+    margin-top: 5px;
+}
+.tarjetas3e{
+    background-image: url(../imagenes/mujer\ cafe.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border: solid black;
+    border-radius: 50%;
+    grid-area: tarjeta5;
+    justify-self: right;
+}
+.textoder {
+	grid-area: texto1;
+	align-self: center;
+	width: 430px;
+	justify-self: right;
+	font-size: 26px;
+}
+.textoizq {
+	grid-area: texto2;
+	width: 429px;
+	align-self: center;
+	font-size: 26px;
+}
+/* Nosotors */
+
+.fotoNosotros {
+	width: 25%;
+	height: 250px;
+	border: solid black;
+	margin: 30px;
+}
+.contenedor-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-nosotros2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.derecha{
+    background-image: url(../imagenes/nosotres\ derecha.jpg);
+    background-size: cover;
+
+}
+.izquierda{
+    background-image: url(../imagenes/nosotres\ izquierda.jpg);
+    background-size: cover; 
+}
+.parrafoMision, .parrafoVision {
+	font-size: 25px;
+	width: 505px;
+}
+/* Contacto */
+
+main .sectioContactos {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 900px;
+}
+main .contacto-form{
+    height: 600px;
+}
+main .form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacto-textarea{
+    margin: 20px 0;
+}
+
+main fieldset{
+    padding: 20px;
+}
+main label {
+margin: 10px 0 0 10px;
+}
+main .mapaContactos {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 0 0 15px 0;
+height: 600px;
+}
+
+/* oponiones */
+
+.opiniones-contenedor {
+	display: grid;
+	grid-template-rows: repeat(3, 500px);
+	grid-template-columns: repeat(2, 700px);
+	align-items: center;
+	justify-content: center;
+}
+.fotoClientes{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid black;
+    margin: 30px 30px;
+}
+   .hombre{
+    background-image: url(/imagenes/hombre\ riendo.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-self: right;
+}
+.mujer {
+	background-image: url(/imagenes/mujer\ riendo.jpg);
+	background-size: cover;
+    background-position: center;
+    justify-self: left;
+}
+.parrafo-mujer {
+	font-size: 31px;
+   justify-self: right;
+   text-align: center;
+}
+.parrafo-hombre{
+	font-size: 31px;
+	
+   justify-self: center;
+   text-align: center;
+}
+.opiniones-textarea {
+	width: 526px;
+	height: 20px;
+}
+.opinionesForm{
+    padding: 25px;
+    margin: 50px;
+
+}
+.opiniones-formulario{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.opinionesInput{
+    margin: 25px;
+}
+
+/* pedidos */
+
+.pedidos {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(2, 300px);
+	grid-template-rows: repeat(3, 450px);
+	column-gap: 175px;
+	row-gap: 180px;
+	margin: 50px;
+	padding-top: 20px;
+}
+
+ main .tarjetas{
+    height: 400px;
+    width: 200px;
+    
+    background-position: center;
+    justify-self: center;
+    align-self: center;
+ }
+ .tarjetas_flex {
+	display: flex;
+	flex-direction: column;
+}
+.pedidos__mocka {
+  
+    background-image: url(/imagenes/mocka_01.jpg);
+    background-repeat: no-repeat;
+   
+   
+}
+.pedidos__cafe{
+    background-image: url(/imagenes/kimbo_01.jpg);
+    background-repeat: no-repeat;
+ 
+}
+.pedidos__lavazza{
+    background-image: url(/imagenes/lavazza_01.jpg);
+    background-repeat: no-repeat;
+}
+.pedidos__grano{
+    background-image: url(/imagenes/granos_01.jpg);
+    background-repeat: no-repeat;
+}
+.pedidos__tazas {
+	background-image: url(/imagenes/tazas_cafe_01.jpg);
+	background-repeat: no-repeat;
+}
+.pedidos__texto {
+	font-size: 25px;
+	text-align: center;
+}
+
+
+
+
+/* footer */
+
+footer section {
+	background-image: url(../imagenes/granos.jpg);
+	background-size: cover;
+	color: white;
+	background-color: rgb(78, 38, 14);
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.parrafoFooter{
+    font-size: 26px;
+ background-color: black;
+ margin-bottom: 10px;
+}
+
+footer .textArea {
+	height: 37px;
+	width: 337px;
+}
+footer .boton {
+	height: 44px;
+	width: 68px;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+
+
+
