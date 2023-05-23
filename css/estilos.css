@@ -226,13 +226,13 @@ height: 600px;
     margin: 30px 30px;
 }
    .hombre{
-    background-image: url(/imagenes/hombre\ riendo.jpg);
+    background-image: url(../imagenes/hombre\ riendo.jpg);
     background-size: cover;
     background-position: center;
     justify-self: right;
 }
 .mujer {
-	background-image: url(/imagenes/mujer\ riendo.jpg);
+	background-image: url(../imagenes/mujer\ riendo.jpg);
 	background-size: cover;
     background-position: center;
     justify-self: left;
