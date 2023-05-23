@@ -270,8 +270,8 @@ height: 600px;
 .pedidos {
 	display: grid;
 	justify-content: center;
-	grid-template-columns: repeat(2, 300px);
-	grid-template-rows: repeat(3, 450px);
+	grid-template-columns: repeat(3, 300px);
+	grid-template-rows: repeat(2, 450px);
 	column-gap: 175px;
 	row-gap: 180px;
 	margin: 50px;
@@ -279,7 +279,7 @@ height: 600px;
 }
 
  main .tarjetas{
-    height: 400px;
+    height: 350px;
     width: 200px;
     background-position: center;
     justify-self: center;
@@ -290,6 +290,7 @@ height: 600px;
 	display: flex;
 	flex-direction: column;
     box-shadow: 10px 10px 25px rgb(134, 134, 134);
+    justify-content: space-evenly;
 }
 .pedidos__mocka {
   
@@ -315,7 +316,7 @@ height: 600px;
 	background-repeat: no-repeat;
 }
 .pedidos__texto {
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 }
 
