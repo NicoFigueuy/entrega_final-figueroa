@@ -292,26 +292,26 @@ height: 600px;
 }
 .pedidos__mocka {
   
-    background-image: url(/imagenes/mocka_01.jpg);
+    background-image: url(../imagenes/mocka_01.jpg);
     background-repeat: no-repeat;
    
    
 }
 .pedidos__cafe{
-    background-image: url(/imagenes/kimbo_01.jpg);
+    background-image: url(../imagenes/kimbo_01.jpg);
     background-repeat: no-repeat;
  
 }
 .pedidos__lavazza{
-    background-image: url(/imagenes/lavazza_01.jpg);
+    background-image: url(../imagenes/lavazza_01.jpg);
     background-repeat: no-repeat;
 }
 .pedidos__grano{
-    background-image: url(/imagenes/granos_01.jpg);
+    background-image: url(../imagenes/granos_01.jpg);
     background-repeat: no-repeat;
 }
 .pedidos__tazas {
-	background-image: url(/imagenes/tazas_cafe_01.jpg);
+	background-image: url(../imagenes/tazas_cafe_01.jpg);
 	background-repeat: no-repeat;
 }
 .pedidos__texto {
