@@ -281,21 +281,21 @@ height: 600px;
  main .tarjetas{
     height: 400px;
     width: 200px;
-    
     background-position: center;
     justify-self: center;
     align-self: center;
+    
  }
  .tarjetas_flex {
 	display: flex;
 	flex-direction: column;
+    box-shadow: 10px 10px 25px rgb(134, 134, 134);
 }
 .pedidos__mocka {
   
     background-image: url(../imagenes/mocka_01.jpg);
     background-repeat: no-repeat;
-   
-   
+    
 }
 .pedidos__cafe{
     background-image: url(../imagenes/kimbo_01.jpg);
