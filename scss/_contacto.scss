@@ -1,0 +1,45 @@
+/* Contacto */
+main{
+
+	.sectioContactos {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 900px;
+	}
+	section{
+		.mapaContactos {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 0 0 15px 0;
+			height: 600px;
+			}
+			form {
+				.contacto-form{
+					height: 600px;
+				}
+				.form {
+					display: flex;
+					flex-direction: column;
+				}
+				fieldset{
+					padding: 20px;
+					.contacto-textarea{
+						margin: 20px 0;
+					}
+					label {
+						margin: 10px 0 0 10px;
+						}
+				}
+			}
+	}
+}
+
+
+
+
+
+
+
+
