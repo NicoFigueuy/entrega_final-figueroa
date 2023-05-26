@@ -19,6 +19,10 @@ main{
             .pedidos__mocka {
                 background-image: url(../imagenes/mocka_01.jpg);
                 background-repeat: no-repeat;
+
+                &:hover{
+                 transform: scale(1.1);
+                }
             }
             .tarjetas{
                 height: 350px;
@@ -36,18 +40,35 @@ main{
              .pedidos__cafe{
                 background-image: url(../imagenes/kimbo_01.jpg);
                 background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
+                
             }
             .pedidos__lavazza{
                 background-image: url(../imagenes/lavazza_01.jpg);
                 background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
             }
             .pedidos__grano{
                 background-image: url(../imagenes/granos_01.jpg);
                 background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
             }
             .pedidos__tazas {
                 background-image: url(../imagenes/tazas_cafe_01.jpg);
                 background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
             }
         }
     }
