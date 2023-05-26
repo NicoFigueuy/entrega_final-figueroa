@@ -30,6 +30,7 @@ header{
 }
 
 
+
 header .headerFlex{
 display: flex;
 justify-content: end;
@@ -74,6 +75,22 @@ header p{
     color: rgb(0, 0, 0);
     text-align: center;
 }
+
+@media (max-width: 320px){
+  header h1{
+  font-size: 6.8rem;
+  margin-top:20px;
+  line-height: 0.9;
+  margin-top: 80px;
+
+  }
+  .headerflex ul{
+    font-size: 10px;
+  }
+
+  }
+
+ 
 
 /* principal*/
 
@@ -149,6 +166,33 @@ margin: 100px 100px;
 	width: 429px;
 	align-self: center;
 	font-size: 26px;
+}
+
+@media (max-width: 320px){
+ main .contenedorGrid{
+  grid-template-areas:
+  "tarjeta1 tarjeta1 tarjeta1"
+  "tarjeta4 tarjeta4 tarjeta4"
+  "texto2 texto2 texto2"
+  "tarjeta2 tarjeta2 tarjeta2"
+  "tarjeta5 tarjeta5 tarjeta5"
+  "texto1 texto1 texto1"
+  "tarjeta3 tarjeta3 tarjeta3"
+ ;
+}
+.tarjetasa img, .tarjetasb img, .tarjetasc img{
+ 
+  width: 500px;
+}
+.tarjetas2d, .tarjetas3e{
+  width: 500px;
+  border-radius: 0;
+  background-position: center;
+  margin-top: 20px;
+}
+.textoder{
+  justify-self: left;
+}
 }
 /* Nosotors */
 
