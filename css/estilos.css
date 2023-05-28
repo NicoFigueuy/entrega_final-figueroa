@@ -25,7 +25,9 @@
 header{
     background-image: url(../imagenes/menu.jpg) ;
     background-size: cover;
+    background-position: center;
   height: 350px;
+  width:100%;
   grid-area: header;
 }
 
@@ -34,10 +36,11 @@ header{
 header .headerFlex{
 display: flex;
 justify-content: end;
-flex-flow: wrap;
+flex-wrap: wrap;
 }
 
 header nav ul{
+    display: flex;
     margin-right: 50px;
    margin-top: 25px;
 }
@@ -45,7 +48,7 @@ header nav ul{
 header nav ul li {
     border-right: solid rgb(255, 255, 255);
     list-style: none;
-    display:inline;
+
     font-size: 2em;
     padding-right: 20px;
 }
@@ -63,20 +66,28 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
+header .titulos{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 50px;
+}
 
-header h1{
+header div h1{
     color: rgb(255, 255, 255);
     font-size: 4rem;
     text-align: center;
-    margin-top: 90px;
 }
-header p{
+header div p{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
 }
 
+
 @media (max-width: 576px){
+    header .headerFlex{
+        flex-flow: column wrap;
+        }
     a{
         font-size: 1.2rem;
         font-weight: bold;
@@ -106,7 +117,7 @@ main .contenedorGrid{
     display: grid;
 grid-template-areas:
  ". tarjeta1 tarjeta2 tarjeta3 ."
- "separador separador separador separador separador"
+ ". . . . ."
  ". tarjeta4 texto2 . ."
  ". . texto1 tarjeta5 ."
 ;
@@ -116,9 +127,9 @@ padding: 20px 0;
 margin: 100px 100px;
 }
 
-.separador{
+/* .separador{
     height:200px
-}
+} */
 
 
 .separador{
@@ -162,27 +173,25 @@ margin: 100px 100px;
 .textoder {
 	grid-area: texto1;
 	align-self: center;
-	width: 430px;
 	justify-self: right;
 	font-size: 26px;
 }
 .textoizq {
 	grid-area: texto2;
-	width: 429px;
 	align-self: center;
 	font-size: 26px;
 }
 
 @media (max-width: 576px){
- main .contenedorGrid{
+ main section .contenedorGrid{
   grid-template-areas:
-  "tarjeta1 tarjeta1 tarjeta1"
-  "tarjeta4 tarjeta4 tarjeta4"
-  "texto2 texto2 texto2"
-  "tarjeta2 tarjeta2 tarjeta2"
-  "tarjeta5 tarjeta5 tarjeta5"
-  "texto1 texto1 texto1"
-  "tarjeta3 tarjeta3 tarjeta3"
+  "tarjeta1"
+  "tarjeta4"
+  "texto2 "
+  "tarjeta2"
+  "tarjeta5"
+  "texto1"
+  "tarjeta3"
  ;
 }
 .tarjetasa img, .tarjetasb img, .tarjetasc img{
@@ -327,10 +336,11 @@ height: 600px;
 	justify-content: center;
 	grid-template-columns: repeat(3, 300px);
 	grid-template-rows: repeat(2, 450px);
-	column-gap: 175px;
-	row-gap: 180px;
+    grid-auto-flow: dense;
+	column-gap: 10%;
+	row-gap: 10%;
 	margin: 50px;
-	padding-top: 20px;
+	padding: 20px 0 100px;
 }
 
  main .tarjetas{
