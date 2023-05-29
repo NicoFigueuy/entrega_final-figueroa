@@ -82,47 +82,6 @@ header .titulos p{
 }
 
 
-@media (max-width: 320px){
-   header{
-    width: 320px;
-   }
-   header nav ul{
- flex-wrap: wrap;
-}
-header .titulos{
-    margin: 0;
-}
-    .layout{
-        grid-template-areas:
-        "header header header"
-        "body body body "
-        "body body body "
-        "body body body "
-        "body body body "
-        "body body body "
-        "body body body "
-        "footer footer footer"
-        ;
-     }
-    a{
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-  header .titulos h1{
-  font-size: 3rem;
-  margin-top:20px;
-  line-height: 0.9;
-  margin-top: -31x;
-  text-shadow: 0 5px 0 black;
-  }
-
-  .headerflex ul li a{
-    font-size: 8px;
-  }
-
-  }
-
-
 
 /* principal*/
 
@@ -194,46 +153,7 @@ margin: 100px 100px;
 	font-size: 26px;
 }
 
-@media (max-width: 320px){
- main section .contenedorGrid{
-  grid-template-areas:
-  "tarjeta1"
-  "tarjeta4"
-  "texto2 "
-  "tarjeta2"
-  "tarjeta5"
-  "texto1"
-  "tarjeta3"
- ;
- margin: 0;
-}
-.tarjetasa{
-    justify-self: center;
-}
-.tarjetasc{
-    justify-self: center;
-}
-.tarjetasd{
-    justify-self: center;
-}
-.tarjetasa img, .tarjetasb img, .tarjetasc img{
 
-  width: 100%;
-}
-.tarjetas2d, .tarjetas3e{
-  border-radius: 0;
-  background-position: center;
-  margin-top: 20px;
-  justify-self: center;
-}
-.textoder{
-  justify-self: center;
-  padding: 20px;
-}
-.textoizq{
-    padding: 20px;
-}
-}
 /* Nosotors */
 
 .fotoNosotros {
@@ -424,20 +344,7 @@ height: 600px;
 	text-align: center;
 }
 
-@media (max-width:320px) {
-    .pedidos{
-        grid-template-columns: repeat(1, 300px);
-	grid-template-rows: repeat(5, 1fr);
-    row-gap: 35px;
-    margin: 0;
-    }
-    header nav ul{
-        margin-right: 0;
-    }
-    main .tarjetas_flex :hover{
-        transform: scale(1.05);
-     }
-}
+
 
 
 /* footer */
@@ -482,6 +389,104 @@ footer{
     }
 }
 
+/* media querie header*/
 
+@media (max-width: 320px){
+    header{
+     width: 320px;
+    }
+    header nav ul{
+  flex-wrap: wrap;
+ }
+ header .titulos{
+     margin: 0;
+ }
+     .layout{
+         grid-template-areas:
+         "header header header"
+         "body body body "
+         "body body body "
+         "body body body "
+         "body body body "
+         "body body body "
+         "body body body "
+         "footer footer footer"
+         ;
+      }
+     a{
+         font-size: 1.2rem;
+         font-weight: bold;
+     }
+   header .titulos h1{
+   font-size: 3rem;
+   margin-top:20px;
+   line-height: 0.9;
+   margin-top: -31x;
+   text-shadow: 0 5px 0 black;
+   }
+ 
+   .headerflex ul li a{
+     font-size: 8px;
+   }
+ 
+   }
 
+   /* media querie body */
+
+   @media (max-width: 320px){
+    main section .contenedorGrid{
+     grid-template-areas:
+     "tarjeta1"
+     "tarjeta4"
+     "texto2 "
+     "tarjeta2"
+     "tarjeta5"
+     "texto1"
+     "tarjeta3"
+    ;
+    margin: 0;
+   }
+   .tarjetasa{
+       justify-self: center;
+   }
+   .tarjetasc{
+       justify-self: center;
+   }
+   .tarjetasd{
+       justify-self: center;
+   }
+   .tarjetasa img, .tarjetasb img, .tarjetasc img{
+   
+     width: 100%;
+   }
+   .tarjetas2d, .tarjetas3e{
+     border-radius: 0;
+     background-position: center;
+     margin-top: 20px;
+     justify-self: center;
+   }
+   .textoder{
+     justify-self: center;
+     padding: 20px;
+   }
+   .textoizq{
+       padding: 20px;
+   }
+   }
+
+   /* media querie productos */
+   @media (max-width:320px) {
+    .pedidos{
+        grid-template-columns: repeat(1, 300px);
+	grid-template-rows: repeat(5, 1fr);
+    row-gap: 35px;
+    margin: 0;
+    }
+    header nav ul{
+        margin-right: 0;
+    }
+    main .tarjetas_flex :hover{
+        transform: scale(1.05git);
+     }
+}
 
