@@ -276,34 +276,49 @@ justify-content: space-between;
 margin: 0 0 15px 0;
 height: 600px;
 }
+.titulos h1, p{
+    margin-bottom: 0;
+}
 
 /* oponiones */
 
 .opiniones-contenedor {
 	display: grid;
-	grid-template-rows: repeat(3, 500px);
-	grid-template-columns: repeat(2, 700px);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1;
 	align-items: center;
 	justify-content: center;
+}
+.opiniones-hombre{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left:50px;
+}
+.opiniones-mujer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 .fotoClientes{
     width: 250px;
     height: 250px;
     border-radius: 50%;
     border: solid black;
-    margin: 30px 30px;
 }
    .hombre{
     background-image: url(/imagenes/hombre\ riendo.jpg);
     background-size: cover;
     background-position: center;
     justify-self: right;
+    margin-right: 30px;
 }
 .mujer {
 	background-image: url(/imagenes/mujer\ riendo.jpg);
 	background-size: cover;
     background-position: center;
     justify-self: left;
+    margin-left: 30px;
 }
 .parrafo-mujer {
 	font-size: 31px;
@@ -312,7 +327,6 @@ height: 600px;
 }
 .parrafo-hombre{
 	font-size: 31px;
-
    justify-self: center;
    text-align: center;
 }
@@ -321,14 +335,12 @@ height: 600px;
 	height: 20px;
 }
 .opinionesForm{
+    border: solid black 1px;
     padding: 25px;
     margin: 50px;
 
 }
-.opiniones-formulario{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
+
 .opinionesInput{
     margin: 25px;
 }
@@ -354,6 +366,9 @@ height: 600px;
     justify-self: center;
     align-self: center;
     
+ }
+ main .tarjetas_flex :hover{
+    transform: scale(1.1);
  }
  .tarjetas_flex {
 	display: flex;
