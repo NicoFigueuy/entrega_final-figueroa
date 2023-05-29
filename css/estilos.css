@@ -46,9 +46,7 @@ header nav ul{
 }
 
 header nav ul li {
-    border-right: solid rgb(255, 255, 255);
     list-style: none;
-
     font-size: 2em;
     padding-right: 20px;
 }
@@ -85,9 +83,6 @@ header div p{
 
 
 @media (max-width: 576px){
-    header .headerFlex{
-        flex-flow: column wrap;
-        }
     a{
         font-size: 1.2rem;
         font-weight: bold;
@@ -97,7 +92,7 @@ header div p{
   margin-top:20px;
   line-height: 0.9;
   margin-top: -31x;
-
+  text-shadow: 0 5px 0 black;
   }
   
   .headerflex ul li a{
@@ -194,18 +189,27 @@ margin: 100px 100px;
   "tarjeta3"
  ;
 }
+.tarjetasa{
+    justify-self: center;
+}
+.tarjetasc{
+    justify-self: center;
+}
+.tarjetasd{
+    justify-self: center;
+}
 .tarjetasa img, .tarjetasb img, .tarjetasc img{
  
-  width: 500px;
+  width: 100%;
 }
 .tarjetas2d, .tarjetas3e{
-  width: 500px;
+  width: 100%;
   border-radius: 0;
   background-position: center;
   margin-top: 20px;
 }
 .textoder{
-  justify-self: left;
+  justify-self: center;
 }
 }
 /* Nosotors */
