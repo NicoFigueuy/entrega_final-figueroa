@@ -17,16 +17,19 @@ header {
   background-image: url(../imagenes/menu.jpg);
   background-size: cover;
   height: 350px;
-  width:100%;
   grid-area: header;
 }
-header h1 {
+header .titulos {
+  display: flex;
+  flex-flow: column wrap;
+}
+header .titulos h1 {
   color: rgb(255, 255, 255);
   font-size: 4rem;
   text-align: center;
   margin-top: 90px;
 }
-header p {
+header .titulos p {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   text-align: center;
@@ -44,19 +47,28 @@ header nav ul li {
   border-right: solid rgb(255, 255, 255);
   list-style: none;
   display: inline;
-  font-size: 2em;
+  font-size: 2rem;
   padding-right: 20px;
+}
+header nav ul li:hover {
+  background-color: rgba(255, 251, 0, 0.404);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 header nav ul li a {
   text-decoration: none;
   color: white;
 }
-header nav ul li a:hover {
-  background-color: rgba(255, 251, 0, 0.404);
-  transform: scale(1.1);
-}
 
 /* principal*/
+@keyframes tarjetas {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 main {
   grid-area: body;
 }
@@ -71,6 +83,11 @@ main .contenedorGrid {
 main .contenedorGrid .tarjetasa {
   grid-area: tarjeta1;
   justify-self: right;
+  animation-name: tarjetas;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transition: 0.2;
 }
 main .contenedorGrid .tarjetasa :hover {
   transform: scale(1.1);
@@ -78,6 +95,12 @@ main .contenedorGrid .tarjetasa :hover {
 main .contenedorGrid .tarjetasb {
   grid-area: tarjeta2;
   justify-self: center;
+  animation-name: tarjetas;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transition: 0.2s;
+  animation-delay: 0.3s;
 }
 main .contenedorGrid .tarjetasb :hover {
   transform: scale(1.1);
@@ -85,6 +108,12 @@ main .contenedorGrid .tarjetasb :hover {
 main .contenedorGrid .tarjetasc {
   grid-area: tarjeta3;
   justify-self: left;
+  animation-name: tarjetas;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  transition: 0.6s;
+  animation-delay: 0.4s;
 }
 main .contenedorGrid .tarjetasc :hover {
   transform: scale(1.1);
@@ -96,8 +125,8 @@ main .contenedorGrid .separador {
 main .contenedorGrid .tarjetas2d {
   background-image: url(../imagenes/pareja\ cafe.jpg);
   background-size: cover;
-  width: 250px;
   height: 250px;
+  width: 250px;
   border: solid black;
   border-radius: 50%;
   grid-area: tarjeta4;
@@ -113,8 +142,8 @@ main .contenedorGrid .textoizq {
 main .contenedorGrid .tarjetas3e {
   background-image: url(../imagenes/mujer\ cafe.jpg);
   background-size: cover;
-  width: 250px;
   height: 250px;
+  width: 250px;
   border: solid black;
   border-radius: 50%;
   grid-area: tarjeta5;
@@ -182,21 +211,17 @@ main section .mapaContactos {
   margin: 0 0 15px 0;
   height: 600px;
 }
-main section form .contacto-form {
-  height: 600px;
-}
-main section form .form {
+main section .contacto-form .form {
   display: flex;
   flex-direction: column;
-}
-main section form fieldset {
   padding: 20px;
+  border: solid 1px black;
 }
-main section form fieldset .contacto-textarea {
-  margin: 20px 0;
-}
-main section form fieldset label {
+main section .contacto-form .form label {
   margin: 10px 0 0 10px;
+}
+main section .contacto-form .form .contacto-textarea {
+  margin: 20px 0;
 }
 
 /* oponiones */
@@ -236,20 +261,21 @@ main section .opiniones-contenedor .mujer {
   background-position: center;
   justify-self: left;
 }
-main section .opiniones-contenedor .opiniones-formulario {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-main section .opiniones-contenedor .opiniones-formulario form .opinionesForm {
+main section .opiniones-contenedor .opiniones-formulario .opinionesForm {
   padding: 25px;
-  margin: 50px;
+  margin-bottom: 20px;
+  border: solid 1px black;
+  margin-left: 50px;
+  width: 560px;
 }
-main section .opiniones-contenedor .opiniones-formulario form .opinionesForm fieldset .opiniones-textarea {
-  width: 526px;
-  height: 20px;
+main section .opiniones-contenedor .opiniones-formulario .opiniones-textarea {
+  width: 500px;
+  height: 100px;
 }
-main section .opiniones-contenedor .opiniones-formulario form .opinionesForm fieldset .opinionesInput {
-  margin: 25px;
+main section .opiniones-contenedor .opiniones-formulario .opinionesInput {
+  margin-bottom: 20px;
+  display: block;
+  width: 500px;
 }
 
 /* footer */
@@ -339,6 +365,125 @@ main .pedidos .tarjetas_flex .pedidos__tazas {
 }
 main .pedidos .tarjetas_flex .pedidos__tazas:hover {
   transform: scale(1.1);
+}
+
+@keyframes tarjetas {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    width: 480px;
+    height: 250px;
+  }
+  header nav ul li {
+    font-size: 0.83rem;
+  }
+  header .titulos h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+@media (max-width: 480px) {
+  main .contenedorGrid {
+    grid-template-areas: "tarjeta1" "tarjeta2" "tarjeta3" "tarjeta4" "texto2" "tarjeta5" "texto1";
+    margin: 0;
+  }
+  main .contenedorGrid .tarjetasa {
+    justify-self: center;
+  }
+  main .contenedorGrid .tarjetasc {
+    justify-self: center;
+  }
+  main .contenedorGrid .tarjetas2d {
+    justify-self: center;
+  }
+  main .contenedorGrid .tarjetas3e {
+    justify-self: center;
+  }
+  main .contenedorGrid .textoizq, main .contenedorGrid .textoder {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 480px) {
+  main section .contenedor-nosotros .derecha {
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    border: solid black;
+    margin: 30px;
+  }
+  main section .contenedor-nosotros .parrafoMision {
+    font-size: 18px;
+    width: 398px;
+    padding-right: 35px;
+  }
+  main section .contenedor-nosotros2 .parrafoVision {
+    font-size: 19px;
+    width: 401px;
+    padding-left: 39px;
+  }
+  main section .contenedor-nosotros2 .fotoNosotros {
+    width: 50%;
+    height: 242px;
+    border: solid black;
+    margin: 40px;
+  }
+}
+@media (max-width: 480px) {
+  main section .opiniones-contenedor {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main section .opiniones-contenedor .hombre {
+    justify-self: center;
+  }
+  main section .opiniones-contenedor .mujer {
+    justify-self: center;
+  }
+  main section .opiniones-contenedor .parrafo-hombre {
+    justify-self: left;
+    align-self: flex-start;
+    width: 442px;
+    padding-left: 20px;
+  }
+  main section .opiniones-contenedor .parrafo-mujer {
+    justify-self: left;
+    align-self: flex-end;
+    width: 440px;
+    padding-left: 20px;
+  }
+  main section .opiniones-contenedor .opiniones-formulario .opinionesForm {
+    width: 370px;
+  }
+  main section .opiniones-contenedor .opiniones-formulario .opinionesInput, main section .opiniones-contenedor .opiniones-formulario .opiniones-textarea {
+    width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  main .pedidos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  main .sectioContactos {
+    width: 480px;
+    flex-direction: column;
+    height: auto;
+  }
+  main .sectioContactos .mapaContactos {
+    margin: 200px 0 0 0;
+    width: 100vw;
+  }
+  main .sectioContactos .form {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

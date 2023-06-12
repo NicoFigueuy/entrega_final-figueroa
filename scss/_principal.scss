@@ -1,5 +1,6 @@
 /* principal*/
-
+@import "animaciones";
+@import "mixin";
 main {
     grid-area: body;
 
@@ -20,6 +21,12 @@ main {
             grid-area: tarjeta1;
             justify-self: right;
 
+            animation-name: tarjetas;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+            transition: 0.2;
+
             & :hover{
               transform: scale(1.1);
             }
@@ -27,8 +34,13 @@ main {
 
         .tarjetasb {
             grid-area: tarjeta2;
-            justify-self: center;
-
+            justify-self: center; 
+            animation-name: tarjetas;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+            transition: 0.2s;
+           animation-delay: 0.3s;
             & :hover{
                 transform: scale(1.1);
               }
@@ -37,11 +49,18 @@ main {
         .tarjetasc {
             grid-area: tarjeta3;
             justify-self: left;
-
+            animation-name: tarjetas;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+            transition: 0.6s;
+            animation-delay: 0.4s;
             & :hover{
                 transform: scale(1.1);
               }
         }
+
+      
 
         .separador {
             height: 200px; 
@@ -51,8 +70,7 @@ main {
         .tarjetas2d {
             background-image: url(../imagenes/pareja\ cafe.jpg);
             background-size: cover;
-            width: 250px;
-            height: 250px;
+            @include tamaño (250px,250px);
             border: solid black;
             border-radius: 50%;
             grid-area: tarjeta4;
@@ -70,8 +88,7 @@ main {
         .tarjetas3e {
             background-image: url(../imagenes/mujer\ cafe.jpg);
             background-size: cover;
-            width: 250px;
-            height: 250px;
+           @include tamaño(250px, 250px);
             border: solid black;
             border-radius: 50%;
             grid-area: tarjeta5;

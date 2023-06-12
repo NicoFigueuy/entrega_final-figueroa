@@ -15,26 +15,29 @@ main{
 			margin: 0 0 15px 0;
 			height: 600px;
 			}
-			form {
-				.contacto-form{
-					height: 600px;
-				}
-				.form {
-					display: flex;
-					flex-direction: column;
-				}
-				fieldset{
-					padding: 20px;
-					.contacto-textarea{
-						margin: 20px 0;
-					}
+			.contacto-form{
+
+					.form {
+						display: flex;
+						flex-direction: column;
+						padding: 20px;
+					border: solid 1px black;
+
 					label {
 						margin: 10px 0 0 10px;
 						}
+
+					.contacto-textarea{
+						margin: 20px 0;
+
+						
+					}
+					}
 				}
+			
 			}
 	}
-}
+
 
 
 

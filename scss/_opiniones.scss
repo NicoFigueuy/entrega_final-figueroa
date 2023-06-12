@@ -40,31 +40,36 @@ main {
                 background-position: center;
                 justify-self: left;
             }
-            .opiniones-formulario {
-                grid-column-start: 1;
-                grid-column-end: 2;
-                form{
+           
+                 .opiniones-formulario{
+                
                     .opinionesForm {
                         padding: 25px;
-                        margin: 50px;
+                        margin-bottom: 20px;
+                        border: solid 1px black;
+                        margin-left: 50px;
+                        width: 560px;
+                    }
 
-                        fieldset{
-                            .opiniones-textarea {
-                                width: 526px;
-                                height: 20px;
-                            }
-                            .opinionesInput {
-                                margin: 25px;
-                            }
-                        }
+                    .opiniones-textarea {
+                        width: 500px;
+                        height: 100px;
+                    }
+                    .opinionesInput {
+                        margin-bottom: 20px;
+                        display: block;
+                        width: 500px;
+                    }
+                       
+                        
                     
                     }
                 }
                 
             }
         }
-    }
-}
+    
+
 
 
 
