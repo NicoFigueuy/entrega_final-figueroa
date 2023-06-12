@@ -1,0 +1,83 @@
+/* pedidos */
+main{
+    .pedidos {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 450px);
+        column-gap: 175px;
+        row-gap: 180px;
+        margin: 50px;
+        padding-top: 20px;
+
+        .tarjetas_flex {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 10px 10px 25px rgb(134, 134, 134);
+            justify-content: space-evenly;
+
+            .pedidos__mocka {
+                background-image: url(../imagenes/mocka_01.jpg);
+                background-repeat: no-repeat;
+
+                &:hover{
+                 transform: scale(1.1);
+                }
+            }
+            .tarjetas{
+                height: 350px;
+                width: 200px;
+                background-position: center;
+                justify-self: center;
+                align-self: center;
+             }
+             div{
+                .pedidos__texto {
+                    font-size: 20px;
+                    text-align: center;
+                }
+             }
+             .pedidos__cafe{
+                background-image: url(../imagenes/kimbo_01.jpg);
+                background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
+                
+            }
+            .pedidos__lavazza{
+                background-image: url(../imagenes/lavazza_01.jpg);
+                background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
+            }
+            .pedidos__grano{
+                background-image: url(../imagenes/granos_01.jpg);
+                background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
+            }
+            .pedidos__tazas {
+                background-image: url(../imagenes/tazas_cafe_01.jpg);
+                background-repeat: no-repeat;
+
+                &:hover{
+                    transform: scale(1.1);
+                   }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

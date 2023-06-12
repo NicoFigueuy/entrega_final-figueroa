@@ -1,0 +1,81 @@
+/* oponiones */
+main {
+    section {
+        .opiniones-contenedor {
+            display: grid;
+            grid-template-rows: repeat(3, 500px);
+            grid-template-columns: repeat(2, 700px);
+            align-items: center;
+            justify-content: center;
+
+            .parrafo-hombre {
+                font-size: 31px;
+            
+                justify-self: center;
+                text-align: center;
+            }
+
+            .fotoClientes {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                border: solid black;
+                margin: 30px 30px;
+            }
+
+            .hombre {
+                background-image: url(../imagenes/hombre\ riendo.jpg);
+                background-size: cover;
+                background-position: center;
+                justify-self: right;
+            }
+            .parrafo-mujer {
+                font-size: 31px;
+                justify-self: right;
+                text-align: center;
+            }
+            .mujer {
+                background-image: url(../imagenes/mujer\ riendo.jpg);
+                background-size: cover;
+                background-position: center;
+                justify-self: left;
+            }
+            .opiniones-formulario {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                form{
+                    .opinionesForm {
+                        padding: 25px;
+                        margin: 50px;
+
+                        fieldset{
+                            .opiniones-textarea {
+                                width: 526px;
+                                height: 20px;
+                            }
+                            .opinionesInput {
+                                margin: 25px;
+                            }
+                        }
+                    
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
