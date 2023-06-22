@@ -4,8 +4,8 @@ main{
 	.sectioContactos {
 		display: flex;
 		justify-content: space-evenly;
-		align-items: center;
-		height: 900px;
+		margin: 100px 0;
+		
 	}
 	section{
 		.mapaContactos {
@@ -13,8 +13,13 @@ main{
 			flex-direction: column;
 			justify-content: space-between;
 			margin: 0 0 15px 0;
-			height: 600px;
+			
 			}
+
+			iframe{
+				width: 600px;
+			}
+
 			.contacto-form{
 
 					.form {

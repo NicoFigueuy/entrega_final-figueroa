@@ -6,6 +6,10 @@ header{
     width: $movil;
     height: 250px;
 
+    .headerFlex{
+        display: none;
+    }
+
     nav{
         ul{
             li{
@@ -17,13 +21,18 @@ header{
     }
     .titulos{
         h1{
-            margin-top: 20px;
+            margin-top: 90px;
             font-size: 3rem;
            text-shadow:  2px 2px 2px black;
         }
     }
+    .navmobile{
+        display:block;
+    }
 }
 }
+
+
 
 //main index
 
@@ -155,17 +164,19 @@ header{
         .sectioContactos{
             width: 480px;
            flex-direction: column;
-           height: auto;
+           margin-top:  120px;
+         iframe{
+            width: $movil;
+         }
 
-           .mapaContactos{
-            margin: 200px 0 0 0;
-            width: 100vw;
-           }
           .form{
             margin-bottom: 20px;
           }
         } 
-
+        .contacto-form{
+            width: 70%;
+            align-self: center;
+        }
 
     }
 }
