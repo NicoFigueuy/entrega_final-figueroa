@@ -1,53 +1,37 @@
 /* Contacto */
-main{
+main {
+  .sectioContactos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+  }
+  section {
+    .mapaContactos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 0 15px 0;
+    }
 
-	.sectioContactos {
-		display: flex;
-		justify-content: space-evenly;
-		margin: 100px 0;
-		
-	}
-	section{
-		.mapaContactos {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			margin: 0 0 15px 0;
-			
-			}
+    iframe {
+      width: 600px;
+    }
 
-			iframe{
-				width: 600px;
-			}
+    .contacto-form {
+      .form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: solid 1px black;
 
-			.contacto-form{
+        label {
+          margin: 10px 0 0 10px;
+        }
 
-					.form {
-						display: flex;
-						flex-direction: column;
-						padding: 20px;
-					border: solid 1px black;
-
-					label {
-						margin: 10px 0 0 10px;
-						}
-
-					.contacto-textarea{
-						margin: 20px 0;
-
-						
-					}
-					}
-				}
-			
-			}
-	}
-
-
-
-
-
-
-
-
-
+        .contacto-textarea {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}

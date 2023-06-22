@@ -433,7 +433,8 @@ main .pedidos .tarjetas_flex .pedidos__tazas:hover {
   main .contenedorGrid .tarjetas3e {
     justify-self: center;
   }
-  main .contenedorGrid .textoizq, main .contenedorGrid .textoder {
+  main .contenedorGrid .textoizq,
+  main .contenedorGrid .textoder {
     padding-left: 20px;
   }
 }
@@ -488,7 +489,8 @@ main .pedidos .tarjetas_flex .pedidos__tazas:hover {
   main section .opiniones-contenedor .opiniones-formulario .opinionesForm {
     width: 370px;
   }
-  main section .opiniones-contenedor .opiniones-formulario .opinionesInput, main section .opiniones-contenedor .opiniones-formulario .opiniones-textarea {
+  main section .opiniones-contenedor .opiniones-formulario .opinionesInput,
+  main section .opiniones-contenedor .opiniones-formulario .opiniones-textarea {
     width: 300px;
   }
 }

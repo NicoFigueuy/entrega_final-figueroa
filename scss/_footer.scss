@@ -1,42 +1,36 @@
 /* footer */
 
-footer { 
-	grid-area: footer;
-	section {
-	background-image: url(../imagenes/granos.jpg);
-	background-size: cover;
-	color: white;
-	background-color: rgb(78, 38, 14);
-	height: 200px;
+footer {
+  grid-area: footer;
+  section {
+    background-image: url(../imagenes/granos.jpg);
+    background-size: cover;
+    color: white;
+    background-color: rgb(78, 38, 14);
+    height: 200px;
 
-	.container{
-		.row{
-			div{
-				.parrafoFooter{
-					font-size: 26px;
-				 background-color: black;
-				 margin-bottom: 10px;
-				}
-			}
-			div{
-				form{
-					.textArea {
-						height: 37px;
-						width: 337px;
-					}
-					.boton {
-						height: 44px;
-						width: 68px;
-					}
-				}
-			}
-		}
-	}
-	
+    .container {
+      .row {
+        div {
+          .parrafoFooter {
+            font-size: 26px;
+            background-color: black;
+            margin-bottom: 10px;
+          }
+        }
+        div {
+          form {
+            .textArea {
+              height: 37px;
+              width: 337px;
+            }
+            .boton {
+              height: 44px;
+              width: 68px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-}
-
-
-
-
-

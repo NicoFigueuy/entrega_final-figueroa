@@ -1,86 +1,65 @@
 /* oponiones */
 main {
-    section {
-        .opiniones-contenedor {
-            display: grid;
-            grid-template-rows: repeat(3, 500px);
-            grid-template-columns: repeat(2, 700px);
-            align-items: center;
-            justify-content: center;
+  section {
+    .opiniones-contenedor {
+      display: grid;
+      grid-template-rows: repeat(3, 500px);
+      grid-template-columns: repeat(2, 700px);
+      align-items: center;
+      justify-content: center;
 
-            .parrafo-hombre {
-                font-size: 31px;
-            
-                justify-self: center;
-                text-align: center;
-            }
+      .parrafo-hombre {
+        font-size: 31px;
 
-            .fotoClientes {
-                width: 250px;
-                height: 250px;
-                border-radius: 50%;
-                border: solid black;
-                margin: 30px 30px;
-            }
+        justify-self: center;
+        text-align: center;
+      }
 
-            .hombre {
-                background-image: url(../imagenes/hombre\ riendo.jpg);
-                background-size: cover;
-                background-position: center;
-                justify-self: right;
-            }
-            .parrafo-mujer {
-                font-size: 31px;
-                justify-self: right;
-                text-align: center;
-            }
-            .mujer {
-                background-image: url(../imagenes/mujer\ riendo.jpg);
-                background-size: cover;
-                background-position: center;
-                justify-self: left;
-            }
-           
-                 .opiniones-formulario{
-                
-                    .opinionesForm {
-                        padding: 25px;
-                        margin-bottom: 20px;
-                        border: solid 1px black;
-                        margin-left: 50px;
-                        width: 560px;
-                    }
+      .fotoClientes {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: solid black;
+        margin: 30px 30px;
+      }
 
-                    .opiniones-textarea {
-                        width: 500px;
-                        height: 100px;
-                    }
-                    .opinionesInput {
-                        margin-bottom: 20px;
-                        display: block;
-                        width: 500px;
-                    }
-                       
-                        
-                    
-                    }
-                }
-                
-            }
+      .hombre {
+        background-image: url(../imagenes/hombre\ riendo.jpg);
+        background-size: cover;
+        background-position: center;
+        justify-self: right;
+      }
+      .parrafo-mujer {
+        font-size: 31px;
+        justify-self: right;
+        text-align: center;
+      }
+      .mujer {
+        background-image: url(../imagenes/mujer\ riendo.jpg);
+        background-size: cover;
+        background-position: center;
+        justify-self: left;
+      }
+
+      .opiniones-formulario {
+        .opinionesForm {
+          padding: 25px;
+          margin-bottom: 20px;
+          border: solid 1px black;
+          margin-left: 50px;
+          width: 560px;
         }
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .opiniones-textarea {
+          width: 500px;
+          height: 100px;
+        }
+        .opinionesInput {
+          margin-bottom: 20px;
+          display: block;
+          width: 500px;
+        }
+      }
+    }
+  }
+}

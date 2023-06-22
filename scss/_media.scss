@@ -1,182 +1,176 @@
 // header
 @import "variables";
 
-@media (max-width: $movil){
-header{
+@media (max-width: $movil) {
+  header {
     width: $movil;
     height: 250px;
 
-    .headerFlex{
-        display: none;
+    .headerFlex {
+      display: none;
     }
 
-    nav{
-        ul{
-            li{
-                font-size: 0.83rem;
-            }
-    
+    nav {
+      ul {
+        li {
+          font-size: 0.83rem;
         }
-    
+      }
     }
-    .titulos{
-        h1{
-            margin-top: 90px;
-            font-size: 3rem;
-           text-shadow:  2px 2px 2px black;
-        }
+    .titulos {
+      h1 {
+        margin-top: 90px;
+        font-size: 3rem;
+        text-shadow: 2px 2px 2px black;
+      }
     }
-    .navmobile{
-        display:block;
+    .navmobile {
+      display: block;
     }
+  }
 }
-}
-
-
 
 //main index
 
-@media (max-width: $movil){
-    main{
-        .contenedorGrid{
-            grid-template-areas: 
-            "tarjeta1"
-            "tarjeta2"
-            "tarjeta3"
-            "tarjeta4"
-            "texto2"
-            "tarjeta5"
-            "texto1"
-            ;
-            margin: 0;
-            .tarjetasa{
-                justify-self: center;
-            }
-            .tarjetasc{
-                justify-self: center;
-            }
-            .tarjetas2d{
-                justify-self: center;
-            }
-            .tarjetas3e{
-                justify-self: center;
-            }
-            .textoizq, .textoder{
-                padding-left: 20px;
-            }
-        }
+@media (max-width: $movil) {
+  main {
+    .contenedorGrid {
+      grid-template-areas:
+        "tarjeta1"
+        "tarjeta2"
+        "tarjeta3"
+        "tarjeta4"
+        "texto2"
+        "tarjeta5"
+        "texto1";
+      margin: 0;
+      .tarjetasa {
+        justify-self: center;
+      }
+      .tarjetasc {
+        justify-self: center;
+      }
+      .tarjetas2d {
+        justify-self: center;
+      }
+      .tarjetas3e {
+        justify-self: center;
+      }
+      .textoizq,
+      .textoder {
+        padding-left: 20px;
+      }
     }
+  }
 }
 
 //nosotros main
 
-@media (max-width:$movil){
-    main{
-    section{
-        .contenedor-nosotros{
-        
-            .derecha{
-                background-position: center;
-                width: 50%;
-                    height: 250px;  
-                    border: solid black;
-                    margin: 30px;
-            }
-            .parrafoMision{
-                font-size: 18px;
-                width: 398px;
-                padding-right: 35px;
-            }
+@media (max-width: $movil) {
+  main {
+    section {
+      .contenedor-nosotros {
+        .derecha {
+          background-position: center;
+          width: 50%;
+          height: 250px;
+          border: solid black;
+          margin: 30px;
         }
-        .contenedor-nosotros2{
-            .parrafoVision{
-                font-size: 19px;
-                width: 401px;
-                padding-left: 39px;
-            }
-            .fotoNosotros{
-                width: 50%;
-                height: 242px;
-                border: solid black;
-                margin: 40px;
-            }
+        .parrafoMision {
+          font-size: 18px;
+          width: 398px;
+          padding-right: 35px;
         }
+      }
+      .contenedor-nosotros2 {
+        .parrafoVision {
+          font-size: 19px;
+          width: 401px;
+          padding-left: 39px;
+        }
+        .fotoNosotros {
+          width: 50%;
+          height: 242px;
+          border: solid black;
+          margin: 40px;
+        }
+      }
     }
-}
+  }
 }
 
 // opiniones main
 
-@media (max-width:$movil){
-    main{
-        section{
-            .opiniones-contenedor{
-                grid-template-rows: repeat(5, 1fr);
-                grid-template-columns: repeat(1,1fr);
+@media (max-width: $movil) {
+  main {
+    section {
+      .opiniones-contenedor {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(1, 1fr);
 
-                .hombre{
-                    justify-self: center;
-                }
-                .mujer{
-                    justify-self: center;
-                }
-                .parrafo-hombre{
-                    justify-self: left;
-                    align-self: flex-start;
-                    width: 442px;
-                    padding-left: 20px;
-                }
-                .parrafo-mujer{
-                    justify-self: left;
-                    align-self: flex-end;
-                    width: 440px;
-                    padding-left: 20px;
-                }
-                .opiniones-formulario{
-                    .opinionesForm{
-                        width:370px
-                    }
-                    .opinionesInput, .opiniones-textarea{
-                        width:300px
-                    }
-                }
-            }
+        .hombre {
+          justify-self: center;
         }
+        .mujer {
+          justify-self: center;
+        }
+        .parrafo-hombre {
+          justify-self: left;
+          align-self: flex-start;
+          width: 442px;
+          padding-left: 20px;
+        }
+        .parrafo-mujer {
+          justify-self: left;
+          align-self: flex-end;
+          width: 440px;
+          padding-left: 20px;
+        }
+        .opiniones-formulario {
+          .opinionesForm {
+            width: 370px;
+          }
+          .opinionesInput,
+          .opiniones-textarea {
+            width: 300px;
+          }
+        }
+      }
     }
+  }
 }
 
 // productos
 
-@media (max-width:$movil){
-    main{
-
-        .pedidos{
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5,1fr);
-        }
+@media (max-width: $movil) {
+  main {
+    .pedidos {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
     }
+  }
 }
 
 //Contacto
 
-@media (max-width:$movil){
-    main{
-        .sectioContactos{
-            width: 480px;
-           flex-direction: column;
-           margin-top:  120px;
-         iframe{
-            width: $movil;
-         }
+@media (max-width: $movil) {
+  main {
+    .sectioContactos {
+      width: 480px;
+      flex-direction: column;
+      margin-top: 120px;
+      iframe {
+        width: $movil;
+      }
 
-          .form{
-            margin-bottom: 20px;
-          }
-        } 
-        .contacto-form{
-            width: 70%;
-            align-self: center;
-        }
-
+      .form {
+        margin-bottom: 20px;
+      }
     }
+    .contacto-form {
+      width: 70%;
+      align-self: center;
+    }
+  }
 }

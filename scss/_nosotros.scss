@@ -1,58 +1,45 @@
 /* Nosotors */
-main{
-    section{
-        .contenedor-nosotros{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+main {
+  section {
+    .contenedor-nosotros {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-            .fotoNosotros {
-                width: 25%;
-                height: 250px;
-                border: solid black;
-                margin: 30px;
-            }
-            .derecha {
-                background-image: url(../imagenes/nosotres\ derecha.jpg);
-                background-size: cover;
-            
-            }
-            .parrafoMision{
-                font-size: 25px;
-                width: 505px;
-            }
-        }
-        .contenedor-nosotros2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .izquierda {
-                background-image: url(../imagenes/nosotres\ izquierda.jpg);
-                background-size: cover;
-            }
-            .parrafoVision {
-                font-size: 25px;
-                width: 505px;
-            }
-            .fotoNosotros {
-                width: 25%;
-                height: 250px;
-                border: solid black;
-                margin: 30px;
-            }
-        }
+      .fotoNosotros {
+        width: 25%;
+        height: 250px;
+        border: solid black;
+        margin: 30px;
+      }
+      .derecha {
+        background-image: url(../imagenes/nosotres\ derecha.jpg);
+        background-size: cover;
+      }
+      .parrafoMision {
+        font-size: 25px;
+        width: 505px;
+      }
     }
+    .contenedor-nosotros2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .izquierda {
+        background-image: url(../imagenes/nosotres\ izquierda.jpg);
+        background-size: cover;
+      }
+      .parrafoVision {
+        font-size: 25px;
+        width: 505px;
+      }
+      .fotoNosotros {
+        width: 25%;
+        height: 250px;
+        border: solid black;
+        margin: 30px;
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-

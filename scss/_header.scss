@@ -1,63 +1,60 @@
 /* header */
 
 header {
-    background-image: url(../imagenes/menu.jpg);
-    background-size: cover;
-    height: 350px;
-    grid-area: header;
+  background-image: url(../imagenes/menu.jpg);
+  background-size: cover;
+  height: 350px;
+  grid-area: header;
 
-    .titulos{
-        display: flex;
-        flex-flow: column wrap;
+  .titulos {
+    display: flex;
+    flex-flow: column wrap;
 
-        h1 {
-            color: rgb(255, 255, 255);
-            font-size: 4rem;
-            text-align: center;
-            margin-top: 90px;
+    h1 {
+      color: rgb(255, 255, 255);
+      font-size: 4rem;
+      text-align: center;
+      margin-top: 90px;
+    }
+
+    p {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      text-align: center;
+    }
+  }
+
+  .headerFlex {
+    display: flex;
+    justify-content: end;
+    flex-flow: wrap;
+  }
+
+  nav {
+    ul {
+      margin-right: 51px;
+      margin-top: 25px;
+
+      li {
+        border-right: solid rgb(255, 255, 255);
+        list-style: none;
+        display: inline;
+        font-size: 2rem;
+        padding-right: 20px;
+
+        &:hover {
+          background-color: rgba(255, 251, 0, 0.404);
+          transform: scale(1.1);
+          transition: 0.5s;
         }
-    
-        p {
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            text-align: center;
+        a {
+          text-decoration: none;
+          color: white;
         }
+      }
     }
-
-
-    .headerFlex {
-        display: flex;
-        justify-content: end;
-        flex-flow: wrap;
-    }
-
-    nav {
-
-        ul {
-            margin-right: 51px;
-            margin-top: 25px;
-
-            li {
-                border-right: solid rgb(255, 255, 255);
-                list-style: none;
-                display: inline;
-                font-size: 2rem;
-                padding-right: 20px;
-                
-                &:hover {
-                    background-color: rgba(255, 251, 0, 0.404);
-                    transform: scale(1.1);
-                    transition: 0.5s;
-                }
-                a {
-                    text-decoration: none;
-                    color: white;
-                    
-                }
-            }
-        }
-    }
-    .navmobile{
-        display:none;
-    }
+  }
+  .navmobile {
+    display: none;
+  }
 }
